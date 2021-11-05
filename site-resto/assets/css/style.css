@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* correction justify-content: space-*/
+.nav {
+    background-color: black;
+    display: flex;
+    line-height: 100px;
+    justify-content: space-around;
+}
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+/*correction taille du logo hauteur:height 30px,
+ c'est mieux de mettre que la hauteur                  */
+.logo {
+    height: 100px;
+    width: 100px ;
+
+}
+/*---------- header------------*/
+.hero {
+    background-image: url('../images/resto.jpg');no repeat center center;
+    background-size: cover;;
+    height: 100vh;
+    object-fit: cover;
+    color: white;
+
+}
+.lien: hover{
+   color: orange;
+}
+/*------main--------*/
+.hero-titre {
+   /* width: 50%;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 400px;
+    text-align: center;
+}
+.titre-principale {
+    font-size: 100px;
+}
+.hero-paragraphe strong {
+    font-size: 40px;
+}
+.galerie {
+    height: 50vh;
+    display: flex;
+}
+
+.galerie img{object-fit: cover;}
+.photo1{width: 50%;}
+.photo2{width: 20%;}
+.photo3{width: 30%;}
+
+.horaires {
+    background-image: url('../images/open.jpg');no repeat center center;
+    background-size: cover;
+    color: white;
+    display: flex;
+    padding: 0 400px;
+}
+.horaire {
+    padding: 100px 20px;
+    
+}
+.horaire ul {
+    list-style-type: none;
+    flex-direction: row;
+}
+.heures ul{
+    list-style-type: none;
+    padding: 200px 30px;
+
+}
+.titre-horaire {
+    font-size: 40px;
+    margin: 30px 0;
+}
+/*point de rupture*/
+@media screen and (max-width:640px){
+    .hero-titre {
+        display: block;
+        padding: 200px;
+        text-align: center;
+       /* font-size: 20px;*/
+
+    }
+    .titre-principale {
+        font-size: 40px;
+    }
+    .hero-paragraphe strong{
+        font-size: 20px;
+    }
+    .hero-paragraphe {
+    
+    }
+    .galerie img{object-fit: cover;}
+    .photo1{width: 100%;}
+    .horaires {
+        background-image: url('../images/motif.jpg');
+       padding: 45px;
+   }
+}
+
